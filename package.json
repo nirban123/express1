@@ -2,11 +2,11 @@
   "name": "express-demo2",
   "version": "0.0.0",
   "private": true,
+  "main": "app.js",
   "scripts": {
     "start": "npm run build && node app.js",
     "dev": "nodemon ./bin/www"
   },
-  "main": "app.js",
   "dependencies": {
     "connect-flash": "^0.1.1",
     "cookie-parser": "~1.4.4",
