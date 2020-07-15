@@ -1,8 +1,8 @@
 var mysql = require('mysql')
 var connection = mysql.createConnection({
-  host: 'localhost',
+  host: 'us-cdbr-east-02.cleardb.com',
   user: process.env.DB_USER,
-  password: '',
+  password: process.env.DB_PASSWORD,
   database: process.env.DB
 })
 
