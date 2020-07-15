@@ -9,9 +9,9 @@ const conn = require('./connection/connection');
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
 const adminRouter = require('./routes/admin');
-const port = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3000;
 const app = express();
-app.set('port', port);
+app.set('port', PORT);
 var session = require('express-session');
 var flush = require('connect-flash');
 
@@ -53,5 +53,5 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
-app.listen(port);
+app.listen(PORT);
 module.exports = app;
